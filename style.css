@@ -221,7 +221,7 @@ section:nth-child(2n) {
     left: 60%;
 }
 #Timeline-length{
-    height:80%;
+    height:60%;
     width:0px;
     border: 3px dashed #0096fa6b;
     position: absolute;
