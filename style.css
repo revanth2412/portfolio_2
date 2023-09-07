@@ -212,21 +212,37 @@ section:nth-child(2n) {
 .experience{
     height: auto;
     width: 40%;
-    /* border: 1px solid red; */
+     border: 1px solid red; 
     position: relative;
     min-height:150px ;
+    overflow: hidden;
 }
 .experience:nth-child(odd){
 
     left: 60%;
 }
+@media screen and (max-width:500px){
+    .experience:nth-child(odd){
+
+        left: 0%;
+    }
+    .experience{
+        height: auto;
+        width: 80%;
+         border: 1px solid red; 
+        position: relative;
+        min-height:150px ;
+        overflow: hidden;
+    }
+
+}
 #Timeline-length{
-    height:60%;
+    height:85%;
     width:0px;
     border: 3px dashed #0096fa6b;
     position: absolute;
     left: 50%;
-    margin-top: 10%;
+    margin-top: 0%;
 }
 #Time-traveller{
     transform: rotate(90deg);
@@ -237,6 +253,19 @@ section:nth-child(2n) {
 }
 #Time-traveller i{
     height: 1.2rem;
+}
+@media screen and (max-width:500px){
+    
+    
+    #Timeline-length{
+        height:85%;
+        width:0px;
+        border: 3px dashed #0096fa6b;
+        position: absolute;
+        left: 90%;
+        margin-top: 0%;
+    }
+    
 }
 .experience-heading{
     height: 75px;
@@ -302,6 +331,7 @@ section:nth-child(2n) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     /* border: 1px solid yellow; */
 }
 .portfolio-img-container{
@@ -460,5 +490,3 @@ textarea:focus,
 button:focus {
     outline: none;
 }
-
-
